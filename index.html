@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>ATINY'S DESTINY</title>
+    <style>
+        body {
+            background-color: #e6c0c0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top" style="background-color: #df9696;">
+	<div class="container-fluid">
+
+		<a class="navbar-brand" href="index.html"><img src="ateezlogo.jpg" alt="logo" width="50px" height="50px" class="rounded-circle"></a>
+
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item"><a class="nav-link" href="index.html" style="color: white">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#" style="color: white">Order Now</a></li>
+				<li class="nav-item"><a class="nav-link" href="#" style="color: white">Contact Us</a></li>
+			</ul>
+
+        <form class="d-flex">
+				<input class="form-control" type="text" placeholder="search..">
+				<button class="btn" style="background-color: #ba7070; color: white" type="button"> Search</button>
+			</form>
+		</div>
+	</div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+    <div class="container" style="background-color: #b15454; border-radius: 15px; padding: 30px;">
+        <div class="header text-center">
+            <i class="fa-solid fa-star" style="color: #762a2a;"></i>
+            <div id="name1" class="display-4 fw-bold"></div>
+            <div id="owner" class="fs-5 mt-2"></div>
+            <div id="since" class="fs-6"></div>
+        </div>
+    </div>
+<br>
+    <div class="product-card container mt-4">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th id="heading1" colspan="2" class="text-center"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product Name</td>
+                    <td>Price (₱)</td>
+                </tr>
+                <tr>
+                    <td id="prod1"></td>
+                    <td id="price1"></td>
+                </tr>
+                <tr>
+                    <td id="prod2"></td>
+                    <td id="price2"></td>
+                </tr>
+                <tr>
+                    <td id="prod3"></td>
+                    <td id="price3"></td>
+                </tr>
+                <tr>
+                    <td id="prod4"></td>
+                    <td id="price4"></td>
+                </tr>
+                <tr>
+                    <td id="prod5"></td>
+                    <td id="price5"></td>
+                </tr>
+                <tr>
+                    <td id="prod6"></td>
+                    <td id="price6"></td>
+                </tr>
+                <tr>
+                    <td id="prod7"></td>
+                    <td id="price7"></td>
+                </tr>
+                <tr>
+                    <td id="prod8"></td>
+                    <td id="price8"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="opening-hours container mt-4 text-center">
+        <i class="fa-solid fa-clock" style="color: #bb5d5d;"></i>
+        <span id="openingHours"></span>
+    </div>
+
+    <div class="text-center mt-4">
+        <span id="orderType" class="badge" style="background: #d48787;"></span>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
